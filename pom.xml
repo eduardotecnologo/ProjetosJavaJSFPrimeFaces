@@ -5,12 +5,15 @@
     <groupId>com.edudeveloper</groupId>
     <artifactId>cadastro-de-empresas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    
     <packaging>war</packaging>
+    
     <name>cadastro-de-empresas</name>
     <description>Cadastro de Empresas</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tomcatversion>9.0.87</tomcatversion>
     </properties>
     
     <dependencies>

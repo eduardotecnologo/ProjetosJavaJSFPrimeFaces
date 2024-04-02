@@ -34,7 +34,7 @@ public class TransacionalInterceptor implements Serializable {
 
 				// agora sim inicia a transação
 				trx.begin();
-
+				
 				criador = true;
 			}
 
@@ -51,5 +51,4 @@ public class TransacionalInterceptor implements Serializable {
 			}
 		}
 	}
-
 }
