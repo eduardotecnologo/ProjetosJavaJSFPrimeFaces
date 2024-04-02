@@ -7,6 +7,7 @@ public enum TipoEmpresa {
 	SA("Sociedade Anonima");
 	
 	private String descricao;
+	
 	TipoEmpresa(String descricao){
 		this.descricao = descricao;
 	}

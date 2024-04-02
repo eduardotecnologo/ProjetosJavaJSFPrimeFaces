@@ -25,12 +25,14 @@
 					<h:outputLabel value="Tipoe Empresa: " for="tipo"/>
 					<h:selectOneMenu id="tipo" value="#{gestaoEmpresasBean.empresa.tipo}">
 						<f:selectItem itemLabel="Selecione"/>
-						<f:selectItem itemLabel="MEI" itemValue="MEI"/>
-						<f:selectItem itemLabel="LTDA" itemValue="LTDA"/>
+						<f:selectItems value="#{gestaoEmpresasBean.tiposEmpresa}" 
+							var="tipoEmpresa" 
+							itemLabel="#{tipoEmpresa.descricao}" 
+							itemValue="#{tipoEmpresa}"/>
 					</h:selectOneMenu>
 					
 					<h:outputLabel />
-					<h:commandButton value="Salvar"/>
+					<h:commandButton value="Salvar" actionListener="#{gestaoEmpresasBean.salvar()}"/>
 				</h:panelGrid>
 				<!-- Listando os dados -->
 				<h:dataTable value="#{[0,0,0,0]}">
